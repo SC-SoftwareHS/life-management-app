@@ -1,0 +1,58 @@
+type,area,name,description,value1,value2,value3,value4
+life_area,physical_health,Physical/Health,Optimize physical wellbeing,💪,,,
+life_area,hobby,Hobby,Pursue creative interests,🎨,,,
+life_area,income_expenses,Income & Expenses,Monitor cash flow,💰,,,
+life_area,assets_liabilities,Assets & Liabilities,Manage wealth and debts,🏦,,,
+life_area,one_on_one,One-on-One Relationship,Strengthen primary partnership,💑,,,
+life_area,family_friends,Family & Friends,Nurture social connections,👨‍👩‍👧‍👦,,,
+life_area,politics,Politics/Civics,Engage with civic duties,🗳️,,,
+life_area,spiritual,Spiritual,Deepen faith and spiritual practices,🙏,,,
+goal,physical_health,Run 5K in under 30 minutes,Build running endurance through structured training,short,in_progress,45,2025-12-31
+goal,physical_health,Lose 15 pounds,Healthy weight loss through diet and exercise,medium,in_progress,20,2026-03-31
+goal,hobby,Complete woodworking project,Build a custom bookshelf,short,not_started,0,2025-11-30
+goal,income_expenses,Increase income by 15%,Negotiate raise or find side income,medium,in_progress,30,2026-06-30
+goal,assets_liabilities,Pay off credit card debt,Eliminate $5000 in CC debt,short,in_progress,60,2026-01-31
+goal,one_on_one,Weekly date nights,Consistent quality time together,short,in_progress,75,2025-12-31
+goal,family_friends,Call Mom weekly,Maintain regular connection,short,in_progress,80,2025-12-31
+goal,politics,Attend town hall meeting,Engage with local government,short,not_started,0,2025-11-15
+goal,spiritual,Read Bible daily,Daily scripture study habit,long,in_progress,40,2026-12-31
+habit,physical_health,Morning yoga,30 minutes of yoga practice,gain,daily,12,30
+habit,physical_health,Quit late-night snacking,Stop eating after 8pm,lose,daily,8,8
+habit,hobby,Practice guitar,Learn new songs and techniques,gain,3x per week,15,22
+habit,income_expenses,Track expenses daily,Record all spending in app,gain,daily,25,45
+habit,spiritual,Morning meditation,10 minutes of quiet reflection,gain,daily,18,32
+habit,spiritual,Evening gratitude,Write 3 things I'm grateful for,gain,daily,6,10
+habit,family_friends,Text a friend,Reach out to maintain connections,gain,weekly,4,7
+contact,physical_health,Dr. Sarah Johnson,Primary care physician,555-0123,sjohnson@clinic.com,1975-06-15,Primary Care
+contact,physical_health,Dr. Michael Chen,Cardiologist,555-0456,mchen@heartclinic.com,,Cardiology
+contact,family_friends,Mom,Mother,555-1234,mom@family.com,1965-11-02,Family
+contact,family_friends,Sarah (Sister),Sister,555-9876,sarah@email.com,1988-11-15,Family
+contact,family_friends,Alex (Best Friend),Close friend,555-4321,alex@email.com,1990-03-05,Friend
+contact,income_expenses,Boss - Jane Smith,Manager,555-7890,jsmith@company.com,,Work
+contact,assets_liabilities,Mortgage Advisor - Tom Brown,Financial advisor,555-3333,tbrown@bank.com,,Finance
+task,physical_health,Schedule annual checkup,Call Dr. Johnson for appointment,todo,high,2025-10-20,Dr. Sarah Johnson
+task,physical_health,Refill vitamins,Order Vitamin D supplement,todo,medium,2025-10-25,
+task,hobby,Buy woodworking supplies,Get wood and tools for bookshelf,todo,medium,2025-10-22,
+task,income_expenses,Review monthly budget,Check spending vs budget,doing,high,2025-10-18,
+task,family_friends,Buy Mom's birthday gift,Get present before Nov 2,todo,high,2025-10-30,Mom
+task,spiritual,Prepare Sunday lesson,Review scripture and prepare notes,todo,medium,2025-10-19,
+reference,physical_health,Medicare.gov,Government health insurance info,website,https://medicare.gov,,,
+reference,politics,Congress.gov,Track federal legislation,website,https://congress.gov,,,
+reference,politics,Affordable Care Act,Summary of ACA provisions,law,federal,,Healthcare reform legislation
+reference,spiritual,Philippians 4:13,Strength through Christ,scripture,,,"I can do all things through Christ who strengthens me",
+health,physical_health,Vitamin D3,Supports bone health,supplement,2000 IU,daily with breakfast,
+health,physical_health,Morning walk,Cardiovascular exercise,motion,30 min,5x per week,
+health,physical_health,Lisinopril,Blood pressure medication,medication,10mg,once daily,
+health,physical_health,Leafy greens,Nutritious vegetables,food,1 cup,daily,
+finance,assets_liabilities,Chase Checking,Primary checking account,banking,5420.50,,...4567
+finance,assets_liabilities,Ally Savings,Emergency fund,banking,35000.00,,...8901
+finance,assets_liabilities,Home,Primary residence,asset,500000.00,215000.00,Equity
+finance,assets_liabilities,401(k),Retirement savings,asset,185000.00,,,
+finance,assets_liabilities,Home Mortgage,Wells Fargo mortgage,liability,285000.00,3.75,2025-01-15
+finance,income_expenses,Credit Card,Chase Freedom,liability,2000.00,18.99,2025-11-05
+conflict,one_on_one,Household chores division,Disagreement on who does what,Create weekly rotation chart together,Chart implemented 2 weeks ago. Seeing improvement.,
+conflict,one_on_one,Financial planning differences,Different comfort levels with spending,Monthly budget meeting with fun money allowance,Need to schedule first meeting.,
+conflict,one_on_one,Quality time vs personal space,Balancing together-time and alone-time,TBD - still discussing approaches,Ongoing conversation.,
+entry,spiritual,Morning reflection,Today I felt centered after meditation. Grateful for quiet time before the day begins.,,2025-10-16,
+entry,physical_health,Workout notes,Great yoga session this morning. Feeling stronger and more flexible.,,2025-10-15,
+entry,family_friends,Mom's call,Had a wonderful conversation with Mom. She's excited about Thanksgiving plans.,,2025-10-14,

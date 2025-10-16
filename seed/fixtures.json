@@ -1,0 +1,506 @@
+{
+  "users": [
+    {
+      "username": "test_user",
+      "email": "test@example.com",
+      "full_name": "Test User",
+      "password_plaintext": "testpass123"
+    }
+  ],
+  "life_areas": [
+    {
+      "name": "physical_health",
+      "display_name": "Physical/Health",
+      "description": "Optimize physical wellbeing",
+      "icon": "💪"
+    },
+    {
+      "name": "hobby",
+      "display_name": "Hobby",
+      "description": "Pursue creative interests",
+      "icon": "🎨"
+    },
+    {
+      "name": "income_expenses",
+      "display_name": "Income & Expenses",
+      "description": "Monitor cash flow",
+      "icon": "💰"
+    },
+    {
+      "name": "assets_liabilities",
+      "display_name": "Assets & Liabilities",
+      "description": "Manage wealth and debts",
+      "icon": "🏦"
+    },
+    {
+      "name": "one_on_one",
+      "display_name": "One-on-One Relationship",
+      "description": "Strengthen primary partnership",
+      "icon": "💑"
+    },
+    {
+      "name": "family_friends",
+      "display_name": "Family & Friends",
+      "description": "Nurture social connections",
+      "icon": "👨‍👩‍👧‍👦"
+    },
+    {
+      "name": "politics",
+      "display_name": "Politics/Civics",
+      "description": "Engage with civic duties",
+      "icon": "🗳️"
+    },
+    {
+      "name": "spiritual",
+      "display_name": "Spiritual",
+      "description": "Deepen faith and spiritual practices",
+      "icon": "🙏"
+    }
+  ],
+  "goals": [
+    {
+      "title": "Run 5K in under 30 minutes",
+      "description": "Build running endurance through structured training plan",
+      "timeframe": "short",
+      "status": "in_progress",
+      "progress_percentage": 45,
+      "due_date": "2025-12-31",
+      "areas": ["physical_health"]
+    },
+    {
+      "title": "Lose 15 pounds",
+      "description": "Healthy weight loss through balanced diet and regular exercise",
+      "timeframe": "medium",
+      "status": "in_progress",
+      "progress_percentage": 20,
+      "due_date": "2026-03-31",
+      "areas": ["physical_health"]
+    },
+    {
+      "title": "Complete woodworking project",
+      "description": "Build a custom bookshelf from scratch",
+      "timeframe": "short",
+      "status": "not_started",
+      "progress_percentage": 0,
+      "due_date": "2025-11-30",
+      "areas": ["hobby"]
+    },
+    {
+      "title": "Increase income by 15%",
+      "description": "Negotiate raise or develop side income stream",
+      "timeframe": "medium",
+      "status": "in_progress",
+      "progress_percentage": 30,
+      "due_date": "2026-06-30",
+      "areas": ["income_expenses"]
+    },
+    {
+      "title": "Pay off credit card debt",
+      "description": "Eliminate $5000 in credit card debt using avalanche method",
+      "timeframe": "short",
+      "status": "in_progress",
+      "progress_percentage": 60,
+      "due_date": "2026-01-31",
+      "areas": ["assets_liabilities"]
+    },
+    {
+      "title": "Weekly date nights",
+      "description": "Consistent quality time with partner every week",
+      "timeframe": "short",
+      "status": "in_progress",
+      "progress_percentage": 75,
+      "due_date": "2025-12-31",
+      "areas": ["one_on_one"]
+    },
+    {
+      "title": "Call Mom weekly",
+      "description": "Maintain regular phone connection with mother",
+      "timeframe": "short",
+      "status": "in_progress",
+      "progress_percentage": 80,
+      "due_date": "2025-12-31",
+      "areas": ["family_friends"]
+    },
+    {
+      "title": "Attend town hall meeting",
+      "description": "Engage with local government decisions",
+      "timeframe": "short",
+      "status": "not_started",
+      "progress_percentage": 0,
+      "due_date": "2025-11-15",
+      "areas": ["politics"]
+    },
+    {
+      "title": "Read Bible daily",
+      "description": "Daily scripture study for spiritual growth",
+      "timeframe": "long",
+      "status": "in_progress",
+      "progress_percentage": 40,
+      "due_date": "2026-12-31",
+      "areas": ["spiritual"]
+    }
+  ],
+  "habits": [
+    {
+      "name": "Morning yoga",
+      "description": "30 minutes of vinyasa yoga practice",
+      "habit_type": "gain",
+      "frequency_description": "daily",
+      "current_streak": 12,
+      "longest_streak": 30,
+      "areas": ["physical_health"]
+    },
+    {
+      "name": "Quit late-night snacking",
+      "description": "Stop eating after 8pm",
+      "habit_type": "lose",
+      "frequency_description": "daily",
+      "current_streak": 8,
+      "longest_streak": 8,
+      "areas": ["physical_health"]
+    },
+    {
+      "name": "Practice guitar",
+      "description": "Learn new songs and improve technique",
+      "habit_type": "gain",
+      "frequency_description": "3x per week",
+      "current_streak": 15,
+      "longest_streak": 22,
+      "areas": ["hobby"]
+    },
+    {
+      "name": "Track expenses daily",
+      "description": "Record all spending in budgeting app",
+      "habit_type": "gain",
+      "frequency_description": "daily",
+      "current_streak": 25,
+      "longest_streak": 45,
+      "areas": ["income_expenses"]
+    },
+    {
+      "name": "Morning meditation",
+      "description": "10 minutes of quiet mindfulness",
+      "habit_type": "gain",
+      "frequency_description": "daily",
+      "current_streak": 18,
+      "longest_streak": 32,
+      "areas": ["spiritual"]
+    },
+    {
+      "name": "Evening gratitude journal",
+      "description": "Write 3 things I'm grateful for",
+      "habit_type": "gain",
+      "frequency_description": "daily",
+      "current_streak": 6,
+      "longest_streak": 10,
+      "areas": ["spiritual"]
+    },
+    {
+      "name": "Text a friend",
+      "description": "Reach out to maintain friendships",
+      "habit_type": "gain",
+      "frequency_description": "weekly",
+      "current_streak": 4,
+      "longest_streak": 7,
+      "areas": ["family_friends"]
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Dr. Sarah Johnson",
+      "role": "Primary Care Physician",
+      "phone": "555-0123",
+      "email": "sjohnson@clinic.com",
+      "birthday": "1975-06-15",
+      "notes": "Accepts Blue Cross insurance. Very thorough and caring.",
+      "areas": ["physical_health"]
+    },
+    {
+      "name": "Dr. Michael Chen",
+      "role": "Cardiologist",
+      "phone": "555-0456",
+      "email": "mchen@heartclinic.com",
+      "notes": "Referred by Dr. Johnson for heart health monitoring.",
+      "areas": ["physical_health"]
+    },
+    {
+      "name": "Mom",
+      "role": "Mother",
+      "phone": "555-1234",
+      "email": "mom@family.com",
+      "address": "123 Family Lane, Hometown, ST 12345",
+      "birthday": "1965-11-02",
+      "notes": "Birthday Nov 2. Loves flowers and books.",
+      "areas": ["family_friends"]
+    },
+    {
+      "name": "Sarah (Sister)",
+      "role": "Sister",
+      "phone": "555-9876",
+      "email": "sarah@email.com",
+      "birthday": "1988-11-15",
+      "notes": "Lives in California. Works in tech.",
+      "areas": ["family_friends"]
+    },
+    {
+      "name": "Alex (Best Friend)",
+      "role": "Best Friend",
+      "phone": "555-4321",
+      "email": "alex@email.com",
+      "birthday": "1990-03-05",
+      "notes": "Childhood friend. Loves hiking and board games.",
+      "areas": ["family_friends"]
+    },
+    {
+      "name": "Jane Smith (Boss)",
+      "role": "Manager",
+      "phone": "555-7890",
+      "email": "jsmith@company.com",
+      "notes": "Direct supervisor. Annual review in Q4.",
+      "areas": ["income_expenses"]
+    },
+    {
+      "name": "Tom Brown (Mortgage Advisor)",
+      "role": "Financial Advisor",
+      "phone": "555-3333",
+      "email": "tbrown@bank.com",
+      "notes": "Handles mortgage and investment accounts.",
+      "areas": ["assets_liabilities"]
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Schedule annual checkup",
+      "description": "Call Dr. Johnson's office for physical exam appointment",
+      "status": "todo",
+      "priority": "high",
+      "due_date": "2025-10-20",
+      "area": "physical_health",
+      "contact": "Dr. Sarah Johnson"
+    },
+    {
+      "title": "Refill vitamins",
+      "description": "Order Vitamin D3 supplement online",
+      "status": "todo",
+      "priority": "medium",
+      "due_date": "2025-10-25",
+      "area": "physical_health"
+    },
+    {
+      "title": "Buy woodworking supplies",
+      "description": "Get wood planks and finishing supplies for bookshelf project",
+      "status": "todo",
+      "priority": "medium",
+      "due_date": "2025-10-22",
+      "area": "hobby"
+    },
+    {
+      "title": "Review monthly budget",
+      "description": "Compare actual spending to budgeted amounts for October",
+      "status": "doing",
+      "priority": "high",
+      "due_date": "2025-10-18",
+      "area": "income_expenses"
+    },
+    {
+      "title": "Buy Mom's birthday gift",
+      "description": "Get present and card before November 2nd",
+      "status": "todo",
+      "priority": "high",
+      "due_date": "2025-10-30",
+      "area": "family_friends",
+      "contact": "Mom"
+    },
+    {
+      "title": "Prepare Sunday lesson",
+      "description": "Review scripture passage and prepare discussion notes",
+      "status": "todo",
+      "priority": "medium",
+      "due_date": "2025-10-19",
+      "area": "spiritual"
+    }
+  ],
+  "references": [
+    {
+      "title": "Medicare.gov",
+      "type": "website",
+      "url": "https://medicare.gov",
+      "notes": "Official government site for health insurance information",
+      "tags": "healthcare,insurance,government",
+      "areas": ["physical_health"]
+    },
+    {
+      "title": "Congress.gov",
+      "type": "website",
+      "url": "https://congress.gov",
+      "notes": "Track federal legislation and representatives",
+      "tags": "government,legislation,politics",
+      "areas": ["politics"]
+    },
+    {
+      "title": "Affordable Care Act",
+      "type": "law",
+      "law_level": "federal",
+      "content": "The Patient Protection and Affordable Care Act mandates health insurance coverage and prohibits denial based on pre-existing conditions.",
+      "notes": "Key healthcare reform legislation",
+      "tags": "healthcare,insurance,federal law",
+      "areas": ["physical_health", "politics"]
+    },
+    {
+      "title": "Philippians 4:13",
+      "type": "scripture",
+      "content": "I can do all things through Christ who strengthens me.",
+      "notes": "Verse about strength and perseverance",
+      "tags": "bible,strength,faith",
+      "areas": ["spiritual", "physical_health"]
+    },
+    {
+      "title": "Dave Ramsey - Financial Peace",
+      "type": "website",
+      "url": "https://daveramsey.com",
+      "notes": "Financial advice and debt reduction strategies",
+      "tags": "finance,debt,budgeting",
+      "areas": ["income_expenses", "assets_liabilities"]
+    }
+  ],
+  "health_catalog": [
+    {
+      "catalog_type": "supplement",
+      "name": "Vitamin D3",
+      "description": "Supports bone health and immune function",
+      "supplement_dosage": "2000 IU",
+      "frequency_description": "daily with breakfast",
+      "notes": "Take with fatty meal for better absorption"
+    },
+    {
+      "catalog_type": "motion",
+      "name": "Morning walk",
+      "description": "Cardiovascular exercise and fresh air",
+      "motion_duration": "30 min",
+      "frequency_description": "5x per week",
+      "notes": "Listen to podcasts or music during walk"
+    },
+    {
+      "catalog_type": "medication",
+      "name": "Lisinopril",
+      "description": "Blood pressure medication",
+      "medication_dosage": "10mg",
+      "medication_frequency": "once daily in morning",
+      "notes": "Prescribed by Dr. Johnson. Take with water."
+    },
+    {
+      "catalog_type": "food",
+      "name": "Leafy greens (spinach, kale)",
+      "description": "Nutrient-dense vegetables",
+      "food_category": "vegetables",
+      "frequency_description": "daily with lunch or dinner",
+      "notes": "High in iron and vitamins A, C, K"
+    },
+    {
+      "catalog_type": "supplement",
+      "name": "Omega-3 Fish Oil",
+      "description": "Supports heart and brain health",
+      "supplement_dosage": "1000mg",
+      "frequency_description": "daily with dinner",
+      "notes": "Reduces inflammation"
+    }
+  ],
+  "financial_accounts": [
+    {
+      "account_type": "banking",
+      "name": "Chase Checking",
+      "institution": "Chase Bank",
+      "account_number_last4": "4567",
+      "current_balance": 5420.50,
+      "notes": "Primary checking account for bills and daily spending"
+    },
+    {
+      "account_type": "banking",
+      "name": "Ally Savings",
+      "institution": "Ally Bank",
+      "account_number_last4": "8901",
+      "current_balance": 35000.00,
+      "interest_rate": 4.25,
+      "notes": "Emergency fund - 6 months expenses"
+    },
+    {
+      "account_type": "asset",
+      "name": "Home (Primary Residence)",
+      "institution": "Wells Fargo Mortgage",
+      "current_balance": 500000.00,
+      "notes": "Current market value. Equity: $215,000"
+    },
+    {
+      "account_type": "asset",
+      "name": "401(k) Retirement",
+      "institution": "Vanguard",
+      "current_balance": 185000.00,
+      "notes": "Target retirement 2050 fund. Employer match 6%."
+    },
+    {
+      "account_type": "liability",
+      "name": "Home Mortgage",
+      "institution": "Wells Fargo",
+      "current_balance": 285000.00,
+      "interest_rate": 3.75,
+      "due_date": "2025-01-15",
+      "notes": "30-year fixed. Monthly payment $1,320"
+    },
+    {
+      "account_type": "liability",
+      "name": "Credit Card (Chase Freedom)",
+      "institution": "Chase",
+      "account_number_last4": "2345",
+      "current_balance": 2000.00,
+      "interest_rate": 18.99,
+      "due_date": "2025-11-05",
+      "notes": "Pay off aggressively. Part of debt reduction goal."
+    }
+  ],
+  "conflict_topics": [
+    {
+      "topic": "Household chores division",
+      "description": "Disagreement on who does what and when",
+      "resolution_strategy": "Create weekly rotation chart together. Review every Sunday evening to adjust as needed.",
+      "progress_notes": "Chart implemented 2 weeks ago. Seeing improvement, fewer arguments. Need to stick with it and make adjustments."
+    },
+    {
+      "topic": "Financial planning differences",
+      "description": "Different comfort levels with spending vs saving",
+      "resolution_strategy": "Monthly budget meeting on first Sunday. Agree on 'fun money' allowance for each person - no questions asked spending.",
+      "progress_notes": "Need to schedule first official meeting. Draft budget created."
+    },
+    {
+      "topic": "Quality time vs personal space",
+      "description": "Balancing together-time and alone-time needs",
+      "resolution_strategy": "TBD - still discussing potential approaches. Considering scheduled date nights AND solo hobby time blocks.",
+      "progress_notes": "Ongoing conversation. Both feel heard. Working on compromise."
+    }
+  ],
+  "entries": [
+    {
+      "area": "spiritual",
+      "title": "Morning reflection",
+      "content": "Today I felt centered after meditation. Grateful for quiet time before the day begins. Focused on Psalm 46:10 - 'Be still and know that I am God.' Helped me approach the day with peace.",
+      "entry_date": "2025-10-16"
+    },
+    {
+      "area": "physical_health",
+      "title": "Workout notes",
+      "content": "Great yoga session this morning. Feeling stronger and more flexible than last week. Held tree pose for a full minute! Small victories add up.",
+      "entry_date": "2025-10-15"
+    },
+    {
+      "area": "family_friends",
+      "title": "Mom's call",
+      "content": "Had a wonderful hour-long conversation with Mom. She's excited about Thanksgiving plans and wants to try a new stuffing recipe. Reminded me how much these regular calls mean to her (and me!).",
+      "entry_date": "2025-10-14"
+    },
+    {
+      "area": "hobby",
+      "title": "Woodworking plans",
+      "content": "Spent time sketching out bookshelf design. Decided on 5 shelves with adjustable heights. Excited to start building next weekend. YouTube tutorials have been super helpful.",
+      "entry_date": "2025-10-13"
+    }
+  ]
+}
