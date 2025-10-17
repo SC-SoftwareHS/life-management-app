@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+.claude/
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+docs/
+*.md
+TODO.md
+PROMPTS_FOR_CONTINUATION.md
+
+# Development files
+.env
+*.log
+
+# Test files
+tests/
+pytest_cache/
+
+# Data (will be created by app)
+server/data/*.db
+server/data/*.db-journal
+
+# Misc
+.DS_Store
+*.csv
