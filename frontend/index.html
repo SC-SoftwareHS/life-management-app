@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Management App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Login/Register Screen -->
+    <div id="auth-screen" class="screen">
+        <div class="auth-container">
+            <h1>Life Management</h1>
+            <p class="tagline">Organize your life across 8 key areas</p>
+
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form">
+                <h2>Login</h2>
+                <form id="login">
+                    <input type="text" id="login-username" placeholder="Username" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <p class="auth-toggle">Don't have an account? <a href="#" id="show-register">Register</a></p>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="auth-form hidden">
+                <h2>Register</h2>
+                <form id="register">
+                    <input type="text" id="register-username" placeholder="Username" required minlength="3">
+                    <input type="email" id="register-email" placeholder="Email" required>
+                    <input type="text" id="register-fullname" placeholder="Full Name" required>
+                    <input type="password" id="register-password" placeholder="Password" required minlength="8">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+                <p class="auth-toggle">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+
+            <div id="auth-error" class="error-message hidden"></div>
+        </div>
+    </div>
+
+    <!-- Main App Screen -->
+    <div id="app-screen" class="screen hidden">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">Life Management</h1>
+                <div class="nav-right">
+                    <span id="user-name" class="user-name"></span>
+                    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard View -->
+            <div id="dashboard-view" class="view">
+                <h2>Your Life Areas</h2>
+                <div id="life-areas-grid" class="life-areas-grid">
+                    <!-- Life area cards will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Goals View -->
+            <div id="goals-view" class="view hidden">
+                <div class="view-header">
+                    <h2>Goals</h2>
+                    <button class="btn btn-primary" id="add-goal-btn">+ Add Goal</button>
+                </div>
+                <div id="goals-list" class="items-list">
+                    <!-- Goals will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Habits View -->
+            <div id="habits-view" class="view hidden">
+                <div class="view-header">
+                    <h2>Habits</h2>
+                    <button class="btn btn-primary" id="add-habit-btn">+ Add Habit</button>
+                </div>
+                <div id="habits-list" class="items-list">
+                    <!-- Habits will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Tasks View -->
+            <div id="tasks-view" class="view hidden">
+                <div class="view-header">
+                    <h2>Tasks</h2>
+                    <button class="btn btn-primary" id="add-task-btn">+ Add Task</button>
+                </div>
+                <div class="kanban-board">
+                    <div class="kanban-column">
+                        <h3>To Do</h3>
+                        <div id="tasks-todo" class="tasks-column"></div>
+                    </div>
+                    <div class="kanban-column">
+                        <h3>Doing</h3>
+                        <div id="tasks-doing" class="tasks-column"></div>
+                    </div>
+                    <div class="kanban-column">
+                        <h3>Done</h3>
+                        <div id="tasks-done" class="tasks-column"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contacts View -->
+            <div id="contacts-view" class="view hidden">
+                <div class="view-header">
+                    <h2>Contacts</h2>
+                    <button class="btn btn-primary" id="add-contact-btn">+ Add Contact</button>
+                </div>
+                <div id="contacts-list" class="items-list">
+                    <!-- Contacts will be inserted here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Forms -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast hidden"></div>
+
+    <!-- Scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/goals.js"></script>
+    <script src="js/habits.js"></script>
+    <script src="js/tasks.js"></script>
+    <script src="js/contacts.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

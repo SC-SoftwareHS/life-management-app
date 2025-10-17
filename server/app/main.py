@@ -1,9 +1,11 @@
 """Main FastAPI application entry point"""
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from starlette.middleware.sessions import SessionMiddleware
 from contextlib import asynccontextmanager
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
 from .db import create_db_and_tables
@@ -105,3 +107,15 @@ app.include_router(health.router, prefix="/api/health", tags=["Health Catalog"])
 app.include_router(finance.router, prefix="/api/finance", tags=["Finance"])
 app.include_router(entries.router, prefix="/api/entries", tags=["Entries"])
 app.include_router(one_on_one.router, prefix="/api/one-on-one", tags=["One-on-One"])
+
+# Serve frontend static files
+# Find the frontend directory (it's next to server/)
+server_dir = Path(__file__).resolve().parent.parent
+frontend_dir = server_dir.parent / "frontend"
+
+if frontend_dir.exists():
+    # Mount static files for CSS and JS
+    app.mount("/static", StaticFiles(directory=str(frontend_dir)), name="static")
+    print(f"[FRONTEND] Serving frontend from: {frontend_dir}")
+else:
+    print(f"[FRONTEND] Frontend directory not found at: {frontend_dir}")
