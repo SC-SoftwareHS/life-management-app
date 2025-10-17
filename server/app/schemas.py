@@ -113,6 +113,15 @@ class HabitCheckinRequest(BaseModel):
     notes: Optional[str] = None
 
 
+class HabitCheckInResponse(BaseModel):
+    """Schema for habit check-in response"""
+    habit_id: int
+    checkin_date: date
+    current_streak: int
+    longest_streak: int
+    message: str
+
+
 class HabitResponse(BaseModel):
     """Schema for habit response"""
     id: int
@@ -222,6 +231,16 @@ class BirthdayResponse(BaseModel):
     days_until_birthday: int
 
 
+class ContactBirthdayResponse(BaseModel):
+    """Schema for contact birthday information"""
+    contact_id: int
+    name: str
+    birthday: date
+    current_age: int
+    next_birthday: date
+    days_until_birthday: int
+
+
 # ==================== REFERENCE SCHEMAS ====================
 
 class ReferenceCreate(BaseModel):
@@ -316,6 +335,12 @@ class HealthCatalogResponse(BaseModel):
     updated_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
+# Aliases for consistency with router imports
+HealthCatalogItemCreate = HealthCatalogCreate
+HealthCatalogItemUpdate = HealthCatalogUpdate
+HealthCatalogItemResponse = HealthCatalogResponse
 
 
 # ==================== FINANCE SCHEMAS ====================

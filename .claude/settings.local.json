@@ -18,7 +18,8 @@
       "Read(//private/tmp/**)",
       "Bash(git config:*)",
       "Bash(cat:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(source venv/bin/activate)"
     ],
     "deny": [],
     "ask": []
