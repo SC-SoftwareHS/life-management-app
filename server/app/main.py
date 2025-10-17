@@ -90,10 +90,15 @@ def health_check():
     return {"status": "healthy"}
 
 
-# TODO: Include routers
-# from .routers import auth, areas, goals, habits, tasks, contacts, references, health, finance, entries, one_on_one, ai
-# app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
-# app.include_router(areas.router, prefix="/api/areas", tags=["Life Areas"])
+# Include routers
+from .routers import auth, areas, ai
+
+app.include_router(auth.router, prefix="/api/auth", tags=["Authentication"])
+app.include_router(areas.router, prefix="/api/areas", tags=["Life Areas"])
+app.include_router(ai.router, prefix="/api/ai", tags=["AI Content"])
+
+# TODO: Add remaining routers as they're created
+# from .routers import goals, habits, tasks, contacts, references, health, finance, entries, one_on_one
 # app.include_router(goals.router, prefix="/api/goals", tags=["Goals"])
 # app.include_router(habits.router, prefix="/api/habits", tags=["Habits"])
 # app.include_router(tasks.router, prefix="/api/tasks", tags=["Tasks"])
@@ -103,4 +108,3 @@ def health_check():
 # app.include_router(finance.router, prefix="/api/finance", tags=["Finance"])
 # app.include_router(entries.router, prefix="/api/entries", tags=["Entries"])
 # app.include_router(one_on_one.router, prefix="/api/one-on-one", tags=["One-on-One"])
-# app.include_router(ai.router, prefix="/api/ai", tags=["AI Content"])
