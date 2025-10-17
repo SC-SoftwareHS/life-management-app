@@ -13,7 +13,12 @@
       "Bash(git push:*)",
       "Bash(curl -s http://localhost:8000/ echo \"\" echo \"\" echo \"2. Health check:\" curl -s http://localhost:8000/health echo \"\" echo \"\" echo \"3. Life Areas:\" curl -s http://localhost:8000/api/areas/)",
       "Bash(head -30 echo \"\" echo \"\" echo \"4. AI Bible Verse (Physical Health):\" curl -s \"http://localhost:8000/api/ai/verse?area=physical_health\")",
-      "Bash(/dev/null echo \"\" echo \"\" echo \"✅ Server is running on http://localhost:8000\" echo \"📖 Swagger UI available at: http://localhost:8000/docs\")"
+      "Bash(/dev/null echo \"\" echo \"\" echo \"✅ Server is running on http://localhost:8000\" echo \"📖 Swagger UI available at: http://localhost:8000/docs\")",
+      "Bash(curl:*)",
+      "Read(//private/tmp/**)",
+      "Bash(git config:*)",
+      "Bash(cat:*)",
+      "Bash(pkill:*)"
     ],
     "deny": [],
     "ask": []

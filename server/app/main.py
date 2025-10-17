@@ -53,7 +53,7 @@ app.add_middleware(
     max_age=86400,  # 24 hours
     same_site="lax",
     https_only=False,  # Set to True in production with HTTPS
-    http_only=True  # Prevents JavaScript access (XSS protection)
+    # httponly is set by default in SessionMiddleware
 )
 
 
