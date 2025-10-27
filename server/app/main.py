@@ -35,10 +35,17 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# Add CORS middleware (for future frontend)
+# Add CORS middleware
+# Allow localhost for development and Railway domain for production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],  # Frontend dev servers
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "http://localhost:8000",
+        "https://web-production-e6a8.up.railway.app",
+        "http://web-production-e6a8.up.railway.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
