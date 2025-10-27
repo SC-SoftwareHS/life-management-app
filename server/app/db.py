@@ -52,7 +52,22 @@ def _get_database_url() -> str:
     if env_url:
         return _normalize_sqlite_url(env_url)
 
-    data_dir = SERVER_DIR / "data"
+    # For Railway/production, use /tmp for ephemeral storage
+    # For local dev, use server/data
+    railway_detected = any(
+        os.getenv(var_name)
+        for var_name in (
+            "RAILWAY_ENVIRONMENT",
+            "RAILWAY_ENVIRONMENT_ID",
+            "RAILWAY_PROJECT_ID",
+            "RAILWAY_SERVICE_ID",
+        )
+    )
+    if railway_detected:
+        data_dir = Path("/tmp/data")
+    else:
+        data_dir = SERVER_DIR / "data"
+
     data_dir.mkdir(parents=True, exist_ok=True)
     db_file = data_dir / "app.sqlite3"
     # SQLAlchemy needs 4 slashes total: sqlite:/// + /absolute/path

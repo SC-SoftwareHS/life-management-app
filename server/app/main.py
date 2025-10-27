@@ -5,6 +5,7 @@ from fastapi.staticfiles import StaticFiles
 from starlette.middleware.sessions import SessionMiddleware
 from contextlib import asynccontextmanager
 import os
+import secrets
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -43,10 +44,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+def _get_app_secret() -> str:
+    """Return configured APP_SECRET or generate a temporary one."""
+    configured = os.getenv("APP_SECRET")
+    if configured:
+        return configured
+
+    generated = secrets.token_urlsafe(32)
+    print(
+        "[SECURITY] APP_SECRET not provided. Generated a temporary secret for this runtime. "
+        "Sessions will reset on restart."
+    )
+    return generated
+
+
 # Add session middleware for authentication
-APP_SECRET = os.getenv("APP_SECRET")
-if not APP_SECRET:
-    raise ValueError("APP_SECRET environment variable must be set!")
+APP_SECRET = _get_app_secret()
 
 app.add_middleware(
     SessionMiddleware,
