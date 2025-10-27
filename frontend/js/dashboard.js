@@ -46,7 +46,10 @@ const Dashboard = {
             // Load data for the view
             switch(viewName) {
                 case 'goals':
-                    if (window.Goals) Goals.load();
+                    if (window.Goals) {
+                        Goals.init(); // Initialize event listeners
+                        Goals.load();
+                    }
                     break;
                 case 'habits':
                     if (window.Habits) Habits.load();
@@ -59,5 +62,11 @@ const Dashboard = {
                     break;
             }
         }
+    },
+
+    backToDashboard() {
+        // Hide all views except dashboard
+        document.querySelectorAll('.view').forEach(view => view.classList.add('hidden'));
+        document.getElementById('dashboard-view').classList.remove('hidden');
     }
 };

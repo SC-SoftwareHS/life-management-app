@@ -1,7 +1,10 @@
 // API Configuration
 const CONFIG = {
-    // For local development
-    API_URL_LOCAL: 'http://localhost:8000',
+    // For local development - use same origin as frontend
+    get API_URL_LOCAL() {
+        // If accessing via 127.0.0.1, use that; if via localhost, use localhost
+        return window.location.origin;
+    },
 
     // For production - auto-detect based on current domain
     get API_URL_PRODUCTION() {
@@ -11,12 +14,8 @@ const CONFIG = {
 
     // Auto-detect environment
     get API_BASE_URL() {
-        // If running on localhost, use local API
-        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-            return this.API_URL_LOCAL;
-        }
-        // Otherwise use production API (same domain as frontend)
-        return this.API_URL_PRODUCTION;
+        // Always use the same origin as the frontend
+        return window.location.origin;
     }
 };
 
