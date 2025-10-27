@@ -1,7 +1,9 @@
-// API Base URL - automatically detect if we're on Railway or local
-const API_BASE_URL = window.location.hostname === 'localhost'
-    ? 'http://localhost:8000'  // Local development
-    : window.location.origin;   // Production (same domain as frontend)
+// API Base URL - use CONFIG if available, otherwise auto-detect
+const API_BASE_URL = window.CONFIG?.API_BASE_URL || (
+    window.location.hostname === 'localhost'
+        ? 'http://localhost:8000'  // Local development
+        : window.location.origin   // Production (same domain as frontend)
+);
 
 // API Client
 class API {
